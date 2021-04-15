@@ -1,6 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   ssr: false,
+  target: 'static',
   head: {
     title: '炽晔工作室_软件定制_PCB板设计',
     htmlAttrs: {
@@ -57,13 +58,31 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extend(config, {
+      isDev
+    }) {
+      // Run ESLint on save
+      // if (ctx.isDev && ctx.isClient) {
+      //   config.module.rules.push({
+      //     enforce: 'pre',
+      //     test: /\.(js|vue)$/,
+      //     loader: 'eslint-loader',
+      //     exclude: /(node_modules)/
+      //   })
+      // }
+
+      if (!isDev) {
+        // relative links, please.
+        config.output.publicPath = './static/'
+      }
+    },
     transpile: [/^element-ui/],
   },
-  router:{
-    base:'/cystudio'
+  router: {
+    base: '/cystudio'
   },
   generate: {
-    dir: 'docs',
-    subFolders:false
+    /* dir: 'dist', */
+    subFolders: false
   }
 }
