@@ -4,10 +4,10 @@
     </el-backtop>
     <el-header height="80px">
       <div class="navdiv">
-        <a class="navdiv navlogo" alt="炽晔工作室">
+        <a class="navdiv navlogo" alt="潮猿工作室">
           <img src="../static/images/logo.png" />
         </a>
-        <span class="navdiv navspan">炽晔工作室</span>
+        <span class="navdiv navspan">潮猿工作室</span>
         <div class="navdiv grid-content navmenu" id="home">
           <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
             <el-menu-item index="1" router>首页</el-menu-item>
@@ -28,7 +28,7 @@
       </el-carousel>
       <h1 class="hjg tl" id="main">工作室简介</h1>
       <div class="content"><span
-          style="font-size: 16px; font-weight: bold;">炽晔工作室</span>致力于电力监控网站、物联网以及其他行业智能平台的定制研发。平台采用阿里云服务器，前后端分离的应用架构，方便扩展维护。通道可采用GPRS模块（包括2G/3G/4G/5G以及未来将实现的通讯模块）、网关、WiFi、
+          style="font-size: 16px; font-weight: bold;">潮猿工作室</span>致力于电力监控网站、物联网以及其他行业智能平台的定制研发。平台采用阿里云服务器，前后端分离的应用架构，方便扩展维护。通道可采用GPRS模块（包括2G/3G/4G/5G以及未来将实现的通讯模块）、网关、WiFi、
         LoRa、zigbee等，灵活方便配合设备通讯。并可使用手机APP，随时随地了解设备运行状态，调整相关参数，及时掌控现场情况，做到了然于胸，沉着应对。<br /><span
           style="font-size: 16px; font-weight: bold;">平台特点：</span>具有手动直接读取设备实时数据、配置参数、远程控制、信号获取等功能，并可执行定时任务进行数据的自动采集存储。<br /><span
           style="font-size: 16px; font-weight: bold;">承接范围：</span>前后端软件定制开发、手机APP开发、微信小程序开发
